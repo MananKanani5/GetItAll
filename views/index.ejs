@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetItAll - Instant Access to Every Video You Need</title>
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+  </head>
+  <body class="bg-body-tertiary">
+    <%- include('./includes/header.ejs') %>
+
+    <main>
+      <section id="home">
+        <section>
+          <div class="container pt-5">
+            <div class="row pt-5">
+              <div class="col-12 text-center">
+                <h1 class="text-primary">
+                  Instant Access to Every Video You Need
+                </h1>
+                <h4>Enter URL and Download Files Seamlessly in One Click</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 mx-auto g-5">
+                <form
+                  action="/download"
+                  method="post"
+                  class="row g-2 needs-validation"
+                  novalidate
+                >
+                  <div class="col-xs-12 col-sm">
+                    <input
+                      type="url"
+                      name="url"
+                      class="form-control"
+                      id="link"
+                      placeholder="Enter video URL from Instagram, Facebook or Tiktok"
+                      required
+                    />
+                    <div class="invalid-feedback">Please Enter Valid URL.</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-auto">
+                    <button type="submit" class="btn btn-primary w-100">
+                      Download Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <img src="/bg.png" class="cover w-100 mt-5" alt="" />
+      </section>
+
+      <section id="about" class="bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center">A Little About GetItAll</h2>
+              <p class="text-justify w-75 content mx-auto mt-5">
+                GetItAll is my go-to solution for effortlessly downloading
+                videos from popular platforms such as Facebook, Instagram, and
+                TikTok. My user-friendly tool allows you to input a video URL
+                and get instant access to high-quality downloads. I focus on
+                simplicity and efficiency, ensuring that you can easily save
+                your favorite content for offline viewing or archiving.
+
+                <br />
+                <br />
+
+                As I continue to enhance my service, my goal is to expand
+                support for more video sources and provide an even better user
+                experience. I am committed to staying ahead of industry trends
+                to offer reliable and fast downloads. Thank you for choosing
+                GetItAll—your one-stop destination for all your video
+                downloading needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./includes/footer.ejs')%>
+  </body>
+</html>

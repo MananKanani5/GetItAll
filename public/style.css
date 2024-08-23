@@ -1,0 +1,61 @@
+:root .text-primary {
+    color: #363cd7 !important;
+}
+:root .btn-primary {
+    background-color: #363cd7 !important;
+}
+:root .btn-primary:hover {
+    background-color: #23279d !important;
+}
+:root .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    min-height: 80vh;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#home {
+    img{
+        max-width: fit-content;
+        margin: auto;
+    }
+}
+
+#home, #about, #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    min-height: 90vh;
+}
+
+#download{
+    padding-top: 100px;
+    min-height: 90vh;
+}
+
+@media(max-width:768px){
+    :root .content{
+        width: 100% !important;
+    }
+
+    #home{
+        padding-top: 0;
+        padding-bottom: 100px;
+        position: relative;
+
+        img{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
