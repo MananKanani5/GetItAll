@@ -62,7 +62,7 @@ main{
     }
 
     .bouncing-blobs-glass {
-        backdrop-filter: blur(70px) !important;
+        backdrop-filter: blur(100px) !important;
       }
 
     .bouncing-blob{
